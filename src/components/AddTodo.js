@@ -26,18 +26,15 @@ const AddTodo = () => {
         setTodo('')
     }
     return (
-        <div className="add-todo">
+        <form action="" onClick={onSubmit}>
             <input
                 type="text"
-                className="task-input"
+                className="input-area"
                 placeholder="Add task"
                 value={todo}
                 onChange={(event) => setTodo(event.target.value)}
             />
-            <button className="task-button" onClick={onSubmit}>
-                追加
-            </button>
-        </div>
+        </form>
     )
 }
 
